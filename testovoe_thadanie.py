@@ -33,8 +33,10 @@ try:
 
                     shoping = cursor.fetchall()
                     for shop in shoping:
-
-                        print(f'Номер заказа:{imp},Стеллаж{shop[3]}, Устройство:{shop[2]}, Количество:{shop[1]},  Доп.стеллаж{shop[4]}')
+                           print(f"\n=== Стеллаж {shop[3]}")
+                        print(f"{shop[2]}")
+                        print(f"заказ {shop[0]}, {shop[1]} шт")
+                        print(f"доп стеллаж: {shop[4]}")
 
 
 
